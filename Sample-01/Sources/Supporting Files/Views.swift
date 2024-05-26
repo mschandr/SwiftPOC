@@ -8,19 +8,26 @@ struct HeroView: View {
         Image("Auth0")
             .resizable()
             .aspectRatio(contentMode: .fit)
-            .frame(width: 25, height: 28, alignment: .center)
-            .padding(.top, 8)
-        VStack(alignment: .leading, spacing: -32) {
-            Text("Swift")
+            .frame(width: 256, height: 256, alignment: .center)
+            .padding(.top, 50)
+        VStack(alignment: .leading, spacing: 0) {
+            Text("Swift-")
                 .tracking(self.tracking)
                 .foregroundStyle(
                     .linearGradient(
-                      colors: [Color("Orange"), Color("Pink")],
+                      colors: [Color("DarkPurple"), Color("SkyBlue")],
+                      startPoint: .bottomLeading,
+                      endPoint: .topTrailing
+                    ))
+            Text("Redirect")
+                .tracking(self.tracking)
+                .foregroundStyle(
+                    .linearGradient(
+                      colors: [Color("DarkPurple"), Color("SkyBlue")],
                       startPoint: .topLeading,
                       endPoint: .bottomTrailing
-                    ))
-            Text("Sample")
-                .tracking(self.tracking)
+                    )
+                )
             Text("App")
                 .tracking(self.tracking)
         }
@@ -67,13 +74,9 @@ struct ProfileCell: View {
             Spacer()
             Text(value)
                 .font(.system(size: self.size, weight: .regular))
-            #if os(iOS)
-                .foregroundColor(Color("Grey"))
-            #endif
+                .foregroundColor(Color("Gray"))
         }
-    #if os(iOS)
         .listRowBackground(Color.white)
-    #endif
     }
 }
 
@@ -82,7 +85,7 @@ struct PrimaryButtonStyle: ButtonStyle {
 
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .font(.system(size: 14, weight: .semibold))
+            .font(.system(size: 20, weight: .semibold))
             .padding(.init(top: self.padding,
                            leading: self.padding * 6,
                            bottom: self.padding,
