@@ -47,7 +47,7 @@
 		5C6537262772F5EE0035759D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5C78D9C027740963000B4B71 /* Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
 		5CA7AC192B893232008EBDCF /* SwiftSample (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SwiftSample (iOS).entitlements"; sourceTree = "<group>"; };
-		5CD3A4492784E54E00B67D88 /* SwiftSampleTests (iOS).xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftSampleTests (iOS).xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CD3A4492784E54E00B67D88 /* SwiftRedirectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftRedirectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CD3A46A27850B9000B67D88 /* HeroViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroViewTests.swift; sourceTree = "<group>"; };
 		5CD3A46C27850BA200B67D88 /* HeroViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroViewTests.swift; sourceTree = "<group>"; };
 		5CD3A46E2785107000B67D88 /* ProfileHeaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderTests.swift; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 		5CD3A4732785217600B67D88 /* ProfileCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCellTests.swift; sourceTree = "<group>"; };
 		5CD3A4772785237000B67D88 /* ProfileViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewTests.swift; sourceTree = "<group>"; };
 		5CD3A4822785EB1000B67D88 /* UserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
-		5CD3A48A2788DFCD00B67D88 /* SwiftSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CD3A48A2788DFCD00B67D88 /* SwiftRedirectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftRedirectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CD3A48E2788DFCD00B67D88 /* SmokeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokeTests.swift; sourceTree = "<group>"; };
 		5CDD8855277102DA00052307 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		5CDD8856277102DA00052307 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -96,6 +96,7 @@
 		5C5DBE8A277217D800E19935 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				692BA8FF2C02AE2B00270AA3 /* Auth0.plist */,
 				5C78D9BF2774093F000B4B71 /* Supporting Files */,
 				5CDD8856277102DA00052307 /* MainView.swift */,
 				5C6537232772F5D90035759D /* ProfileView.swift */,
@@ -174,7 +175,6 @@
 		5CDD884F277102DA00052307 = {
 			isa = PBXGroup;
 			children = (
-				692BA8FF2C02AE2B00270AA3 /* Auth0.plist */,
 				5C5DBE8A277217D800E19935 /* Sources */,
 				5CD3A4522784E56300B67D88 /* Tests */,
 				5CD3A48B2788DFCD00B67D88 /* UITests */,
@@ -186,8 +186,8 @@
 			isa = PBXGroup;
 			children = (
 				5CDD885C277102DC00052307 /* SwiftSample.app */,
-				5CD3A4492784E54E00B67D88 /* SwiftSampleTests (iOS).xctest */,
-				5CD3A48A2788DFCD00B67D88 /* SwiftSampleUITests.xctest */,
+				5CD3A4492784E54E00B67D88 /* SwiftRedirectTests.xctest */,
+				5CD3A48A2788DFCD00B67D88 /* SwiftRedirectUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -203,9 +203,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5CD3A4482784E54E00B67D88 /* SwiftSampleTests (iOS) */ = {
+		5CD3A4482784E54E00B67D88 /* SwiftRedirectTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5CD3A4512784E54E00B67D88 /* Build configuration list for PBXNativeTarget "SwiftSampleTests (iOS)" */;
+			buildConfigurationList = 5CD3A4512784E54E00B67D88 /* Build configuration list for PBXNativeTarget "SwiftRedirectTests" */;
 			buildPhases = (
 				5CD3A4452784E54E00B67D88 /* Sources */,
 				5CD3A4462784E54E00B67D88 /* Frameworks */,
@@ -216,17 +216,17 @@
 			dependencies = (
 				5CD3A44E2784E54E00B67D88 /* PBXTargetDependency */,
 			);
-			name = "SwiftSampleTests (iOS)";
+			name = SwiftRedirectTests;
 			packageProductDependencies = (
 				5CD3A4632784F5F900B67D88 /* ViewInspector */,
 			);
 			productName = "SwiftSampleTests (iOS)";
-			productReference = 5CD3A4492784E54E00B67D88 /* SwiftSampleTests (iOS).xctest */;
+			productReference = 5CD3A4492784E54E00B67D88 /* SwiftRedirectTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5CD3A4892788DFCD00B67D88 /* SwiftSampleUITests */ = {
+		5CD3A4892788DFCD00B67D88 /* SwiftRedirectUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5CD3A4942788DFCD00B67D88 /* Build configuration list for PBXNativeTarget "SwiftSampleUITests" */;
+			buildConfigurationList = 5CD3A4942788DFCD00B67D88 /* Build configuration list for PBXNativeTarget "SwiftRedirectUITests" */;
 			buildPhases = (
 				5CD3A4862788DFCD00B67D88 /* Sources */,
 				5CD3A4872788DFCD00B67D88 /* Frameworks */,
@@ -237,14 +237,14 @@
 			dependencies = (
 				5CD3A4912788DFCD00B67D88 /* PBXTargetDependency */,
 			);
-			name = SwiftSampleUITests;
+			name = SwiftRedirectUITests;
 			productName = "SwiftSampleUITests (iOS)";
-			productReference = 5CD3A48A2788DFCD00B67D88 /* SwiftSampleUITests.xctest */;
+			productReference = 5CD3A48A2788DFCD00B67D88 /* SwiftRedirectUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		5CDD885B277102DC00052307 /* SwiftSample (iOS) */ = {
+		5CDD885B277102DC00052307 /* SwiftRedirect */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5CDD886D277102DC00052307 /* Build configuration list for PBXNativeTarget "SwiftSample (iOS)" */;
+			buildConfigurationList = 5CDD886D277102DC00052307 /* Build configuration list for PBXNativeTarget "SwiftRedirect" */;
 			buildPhases = (
 				5CDD8858277102DC00052307 /* Sources */,
 				5CDD8859277102DC00052307 /* Frameworks */,
@@ -255,7 +255,7 @@
 			);
 			dependencies = (
 			);
-			name = "SwiftSample (iOS)";
+			name = SwiftRedirect;
 			packageProductDependencies = (
 				5C5DBE82277210B400E19935 /* Auth0 */,
 			);
@@ -286,7 +286,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5CDD8853277102DA00052307 /* Build configuration list for PBXProject "SwiftSample" */;
+			buildConfigurationList = 5CDD8853277102DA00052307 /* Build configuration list for PBXProject "SwiftRedirect" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -303,9 +303,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5CDD885B277102DC00052307 /* SwiftSample (iOS) */,
-				5CD3A4482784E54E00B67D88 /* SwiftSampleTests (iOS) */,
-				5CD3A4892788DFCD00B67D88 /* SwiftSampleUITests */,
+				5CDD885B277102DC00052307 /* SwiftRedirect */,
+				5CD3A4482784E54E00B67D88 /* SwiftRedirectTests */,
+				5CD3A4892788DFCD00B67D88 /* SwiftRedirectUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -397,12 +397,12 @@
 /* Begin PBXTargetDependency section */
 		5CD3A44E2784E54E00B67D88 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5CDD885B277102DC00052307 /* SwiftSample (iOS) */;
+			target = 5CDD885B277102DC00052307 /* SwiftRedirect */;
 			targetProxy = 5CD3A44D2784E54E00B67D88 /* PBXContainerItemProxy */;
 		};
 		5CD3A4912788DFCD00B67D88 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5CDD885B277102DC00052307 /* SwiftSample (iOS) */;
+			target = 5CDD885B277102DC00052307 /* SwiftRedirect */;
 			targetProxy = 5CD3A4902788DFCD00B67D88 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -701,7 +701,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5CD3A4512784E54E00B67D88 /* Build configuration list for PBXNativeTarget "SwiftSampleTests (iOS)" */ = {
+		5CD3A4512784E54E00B67D88 /* Build configuration list for PBXNativeTarget "SwiftRedirectTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5CD3A44F2784E54E00B67D88 /* Debug */,
@@ -710,7 +710,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		5CD3A4942788DFCD00B67D88 /* Build configuration list for PBXNativeTarget "SwiftSampleUITests" */ = {
+		5CD3A4942788DFCD00B67D88 /* Build configuration list for PBXNativeTarget "SwiftRedirectUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5CD3A4922788DFCD00B67D88 /* Debug */,
@@ -719,7 +719,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		5CDD8853277102DA00052307 /* Build configuration list for PBXProject "SwiftSample" */ = {
+		5CDD8853277102DA00052307 /* Build configuration list for PBXProject "SwiftRedirect" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5CDD886B277102DC00052307 /* Debug */,
@@ -728,7 +728,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		5CDD886D277102DC00052307 /* Build configuration list for PBXNativeTarget "SwiftSample (iOS)" */ = {
+		5CDD886D277102DC00052307 /* Build configuration list for PBXNativeTarget "SwiftRedirect" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5CDD886E277102DC00052307 /* Debug */,

@@ -1,3 +1,10 @@
+//
+//  SwiftUIView.swift
+//  SwiftSample (iOS)
+//
+//  Created by Mark Dhas on 2024-05-26.
+//
+
 import SwiftUI
 import Auth0
 
